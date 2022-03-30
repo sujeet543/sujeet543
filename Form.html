@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <div class="container">
+       <form action="">
+           <h1 style="color: rgb(251, 251, 253); text-align: center;">Payment Form</h1>
+           <h2>Contact Information</h2>
+           <p>Name:<input type="text" name="name" required placeholder="Sujeet Kumar"></p>
+           <fieldset>
+              <legend>Gender</legend>
+              <p>
+                  <input type="radio" name="Gender" id="Male">Male<br>
+                  <input type="radio" name="Gender" id="Female">Female
+              </p>
+           </fieldset>
+           <p>
+                Address:<textarea name="Address" id="Address" cols="100" rows="8"></textarea>
+            
+           </p>   
+            <p> Email:<input type="email" name="Email" id="Email"></p>
+            <p>Pincode:<input type="number" name="pincode" id="pincode"></p>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type:
+                <select name="card_type" id="card_type">
+                    <option value="">--select a card type</option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Mastercard">Mastercard</option>
+                   <option value="visa">Visa</option>
+              </select>
+          </p>
+           <p>
+              Card Number:<input type="number" name="card_number" id="card_number">
+          </p>
+           <p>
+              valid up to: <input type="date" name="valid_up to" id="valid_up_to">
+           </p>
+           <p>
+              CVV:<input type="password" name="cvv" id="cvv">
+          </p>
+           <p>
+              Name on card:<input type="text" name="name_card" id="name_card">
+           </p>
+            <input type="submit" value="Pay Now">
+      </form>
+    </div>   
+
+    
+</body>
+</html>
